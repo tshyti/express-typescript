@@ -2,7 +2,7 @@ import { User } from "./models/User";
 
 export type UserCreationParams = Pick<User, "email" | "name" | "phoneNumbers">;
 
-export default class UsersService {
+export class UsersService {
   public get(id: number, name?: string): User {
     return {
       id,
