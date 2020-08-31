@@ -6,8 +6,8 @@ export default function setupSwagger(app: INestApplication) {
     .setTitle('Cats example')
     .setDescription('The cats API description')
     .setVersion('1.0')
-    .addTag('cats')
     .build();
+
   const document = SwaggerModule.createDocument(app, options);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('api/swagger', app, document);
 }
