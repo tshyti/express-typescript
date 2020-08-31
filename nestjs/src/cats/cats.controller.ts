@@ -8,7 +8,7 @@ import {
 } from '@nestjs/common';
 import Cat, { FurrDensity } from './models/Cat.entity';
 import CreateCatDto from './models/CreateCat.dto';
-import { ApiParam, ApiOperation, ApiTags } from '@nestjs/swagger';
+import { ApiParam, ApiTags } from '@nestjs/swagger';
 import { API_VERSION_ONE } from 'src/common/constants';
 
 @ApiTags(`${API_VERSION_ONE}cats`)
