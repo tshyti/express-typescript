@@ -9,9 +9,10 @@ import {
 import Cat, { FurrDensity } from './models/Cat.entity';
 import CreateCatDto from './models/CreateCat.dto';
 import { ApiParam, ApiOperation, ApiTags } from '@nestjs/swagger';
+import { API_VERSION_ONE } from 'src/common/constants';
 
-@ApiTags('cats')
-@Controller('cats')
+@ApiTags(`${API_VERSION_ONE}cats`)
+@Controller(`${API_VERSION_ONE}cats`)
 export default class CatsController {
   private id = 0;
 
